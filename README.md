@@ -19,7 +19,7 @@ A tool for scene text data augmentation. provided the tool to avoid overfitting 
 ./install-opencv.sh
 ```
 
-- try docker
+- try docker **Recommend**
 
 ```bash
 docker push allenzhou1996/mls-pybind11:latest
