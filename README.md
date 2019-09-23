@@ -1,6 +1,20 @@
 # pybind11-Scene-Text-Image-Transformation
 
-Thanks for [Canjie-Luo](https://github.com/Canjie-Luo), codes borrows from [Canjie-Luo/Scene-Text-Image-Transformer](https://github.com/Canjie-Luo/Scene-Text-Image-Transformer)
+## Contributions
+
+Codes borrows from
+
+- [Canjie-Luo/Scene-Text-Image-Transformer](https://github.com/Canjie-Luo/Scene-Text-Image-Transformer)
+
+- [cxcxcxcx/imgwarp-opencv](https://github.com/cxcxcxcx/imgwarp-opencv)
+
+- [yati-sagade/opencv-ndarray-conversion](https://github.com/yati-sagade/opencv-ndarray-conversion)
+
+- [edmBernard/pybind11_opencv_numpy](https://github.com/edmBernard/pybind11_opencv_numpy)
+
+- [cv_mat_to_numpy](https://www.jianshu.com/p/be16847b0b74)
+
+
 
 A tool for scene text data augmentation. provided the tool to avoid overfitting and gain robustness of models.
 
@@ -13,13 +27,14 @@ A tool for scene text data augmentation. provided the tool to avoid overfitting 
 
 ## Installation
 
-- install OpenCV on ubuntu 16.04
+- install OpenCV and python3 on ubuntu 16.04
 
+for example.
 ```bash
 ./install-opencv.sh
 ```
 
-- try docker **Recommend**
+- try docker **Recommend✔**
 
 ```bash
 docker push allenzhou1996/mls-pybind11:latest
@@ -51,11 +66,11 @@ python test_mls_pybind11.py
 
 ## Speed
 
-To transform an [image](pic/demo.png) with size (H:101, W:842), it takes less than **2.4ms (0.0024 sec)** using a i5-8400 @2.8GHz CPU. 
+To transform an [demo image](pic/demo.png) with size (H:101, W:842), it takes less than **2.4ms (0.0024 sec)** using a i5-8400 @2.8GHz CPU. 
 
 ## Improvement for Recognition
 
-We compare the accuracies of [CRNN](https://github.com/meijieru/crnn.pytorch) trained using only the corresponding small training set.
+The result represents the accuracies of [CRNN](https://github.com/meijieru/crnn.pytorch) trained using only the corresponding small training set, thanks for [Canjie-Luo/Scene-Text-Image-Transformer](https://github.com/Canjie-Luo/Scene-Text-Image-Transformer)'s experiments.
 
 | <center>Dataset</center> | <center>IIIT5K</center> | <center>IC13</center> | <center>IC15</center> |
 | :---: | :---: | :---: | :---:|
@@ -77,9 +92,6 @@ We compare the accuracies of [CRNN](https://github.com/meijieru/crnn.pytorch) tr
   organization={ACM}
 }
 ```
-
-## Acknowledgment
-The tool is the combination of [@cxcxcxcx's](https://github.com/cxcxcxcx) [imgwarp-opencv](https://github.com/cxcxcxcx/imgwarp-opencv) and [@Yati Sagade's](https://github.com/yati-sagade) [opencv-ndarray-conversion](https://github.com/yati-sagade/opencv-ndarray-conversion). Thanks for your contribution. 
 
 ## Attention
 The tool is only free for academic research purposes.
