@@ -14,8 +14,6 @@ Codes borrows from
 
 - [cv_mat_to_numpy](https://www.jianshu.com/p/be16847b0b74)
 
-
-
 A tool for scene text data augmentation. provided the tool to avoid overfitting and gain robustness of models.
 
 ## Requirements
@@ -28,11 +26,6 @@ A tool for scene text data augmentation. provided the tool to avoid overfitting 
 ## Installation
 
 - install OpenCV and python3 on ubuntu 16.04
-
-for example.
-```bash
-./install-opencv.sh
-```
 
 - try docker **Recommend✔**
 
@@ -68,15 +61,6 @@ python test_mls_pybind11.py
 
 To transform an [demo image](pic/demo.png) with size (H:101, W:842), it takes less than **2.4ms (0.0024 sec)** using a i5-8400 @2.8GHz CPU. 
 
-## Improvement for Recognition
-
-The result represents the accuracies of [CRNN](https://github.com/meijieru/crnn.pytorch) trained using only the corresponding small training set, thanks for [Canjie-Luo/Scene-Text-Image-Transformer](https://github.com/Canjie-Luo/Scene-Text-Image-Transformer)'s experiments.
-
-| <center>Dataset</center> | <center>IIIT5K</center> | <center>IC13</center> | <center>IC15</center> |
-| :---: | :---: | :---: | :---:|
-| Without Data Augmentation | <center>40.8%</center> | <center>6.8%</center> | <center>8.7%</center> |
-| <center>With Data Augmentation</center> | <center>53.4%</center> | <center>9.6%</center> | <center>24.9%</center> | 
-
 
 ## Citation
 
@@ -92,6 +76,3 @@ The result represents the accuracies of [CRNN](https://github.com/meijieru/crnn.
   organization={ACM}
 }
 ```
-
-## Attention
-The tool is only free for academic research purposes.
