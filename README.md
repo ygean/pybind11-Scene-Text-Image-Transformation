@@ -45,17 +45,21 @@ python test_mls_pybind11.py
 
 ## Demo
 
+- Original Image
+
+![](pic/demo.png)
+
 - Distortion
 
-![](pic/im_Distort/demo.png.jpg) 
+![](pic/im_Distort/demo.png) 
 
 - Stretch
 
-![](pic/im_Stretch/demo.png.jpg)
+![](pic/im_Stretch/demo.png)
 
 - Perspective
 
-![](pic/im_Perspective/demo.png.jpg)
+![](pic/im_Perspective/demo.png)
 
 ## Speed
 
