@@ -92,6 +92,9 @@ void ImgWarp_MLS::setSrcPoints(const vector<Point_<int> > &qsrc) {
 void ImgWarp_MLS::setDstPoints(const vector<Point_<int> > &qdst) {
     nPoint = qdst.size();
     oldDotL.clear();
+    // reserve 用来指定初始化vector空间的
+    // 看这篇文章
+    // https://www.cnblogs.com/biyeymyhjob/archive/2013/05/11/3072893.html
     oldDotL.reserve(nPoint);
 
     for (size_t i = 0; i < qdst.size(); i++) oldDotL.push_back(qdst[i]);
